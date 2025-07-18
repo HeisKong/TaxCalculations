@@ -1,0 +1,5 @@
+<div>
+    <select [(ngModel)]="selectMonth" name="selectMonth" (change)="onMonthChange()" required>
+        <option *ngFor="let month of canUseMonth" [value]="month">{{ month }}</option>
+    </select>
+</div>

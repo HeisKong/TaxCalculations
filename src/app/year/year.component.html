@@ -1,0 +1,5 @@
+<div>
+  <select [(ngModel)]="selectYearValue" name="selectYear" (change)="onYearChange()" required>
+    <option *ngFor="let y of year" [value]="y">{{ y }}</option>
+  </select>
+</div>
